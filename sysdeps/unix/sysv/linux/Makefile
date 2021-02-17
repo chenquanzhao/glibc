@@ -114,6 +114,12 @@ tests += tst-clone tst-clone2 tst-clone3 tst-fanotify tst-personality \
 	 tst-timerfd tst-ppoll tst-futimens tst-clock_adjtime tst-utime \
 	 tst-utimes
 tests-internal += tst-ofdlocks-compat tst-sigcontext-get_pc
+tests-time64 += \
+  tst-futimens-time64 \
+  tst-ppoll-time64 \
+  tst-utime-time64 \
+  tst-utimes-time64 \
+  tst-timerfd-time64
 
 CFLAGS-tst-sigcontext-get_pc.c = -fasynchronous-unwind-tables
 

@@ -50,6 +50,16 @@ tests	:= test_time clocktest tst-posixtz tst-strptime tst_wcsftime \
 	   tst-clock tst-clock2 tst-clock_nanosleep tst-cpuclock1 \
 	   tst-adjtime tst-ctime tst-difftime tst-mktime4 tst-clock_settime
 
+tests-time64 := \
+  tst-clock-time64 \
+  tst-clock2-time64 \
+  tst-clock_nanosleep-time64 \
+  tst-cpuclock1-time64 \
+  tst-ctime-time64 \
+  tst-difftime-time64 \
+  tst-mktime4-time64 \
+  tst-y2039-time64
+
 include ../Rules
 
 ifeq ($(run-built-tests),yes)
